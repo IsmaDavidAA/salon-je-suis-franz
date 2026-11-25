@@ -59,68 +59,55 @@
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
-  <div class="ribbon">
-    <div class="wrap ribbon-inner">
-      <p data-status>Consultando el horario…</p>
-      <a href="tel:+59174378363">Llamar al 74378363</a>
+  <div class="top" id="top">
+    <div class="ribbon">
+      <div class="wrap ribbon-inner">
+        <p data-status>Consultando el horario…</p>
+        <a href="tel:+59174378363">Llamar al 74378363</a>
+      </div>
     </div>
+    <header class="header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#inicio" aria-label="Salón Je Suis Franz, inicio">
+          <strong>Je suis <em>Franz</em></strong>
+          <span>Peluquería</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+        <nav class="nav" id="menu" aria-label="Secciones">
+          <a href="#servicios">Servicios</a>
+          <a href="#color">Color</a>
+          <a href="#horario">Horario</a>
+          <a href="#donde">Dónde</a>
+        </nav>
+        <a class="btn btn-brass header-cta" href="tel:+59174378363">Llamar</a>
+      </div>
+    </header>
   </div>
-  <header class="header">
-    <div class="wrap header-inner">
-      <a class="brand" href="#inicio" aria-label="Salón Je Suis Franz, inicio">
-        <span class="mark" aria-hidden="true">F</span>
-        <span>
-          <strong>Je suis Franz</strong>
-          <span>Peluquería y barbería</span>
-        </span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-      <nav class="nav" id="menu" aria-label="Secciones">
-        <a href="#servicios">Servicios</a>
-        <a href="#color">Color</a>
-        <a href="#horario">Horario</a>
-        <a href="#donde">Dónde</a>
-      </nav>
-      <a class="btn btn-brass header-cta" href="tel:+59174378363">Llamar</a>
-    </div>
-  </header>
 
   <main id="contenido">
     <section class="hero" id="inicio">
-      <div class="wrap hero-grid">
+      <img class="hero-photo" src="assets/hero.jpg" alt="Sillones negros y espejos redondos de un salón, fotografía de ambiente">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-grid">
         <div>
-          <p class="eyebrow">Calle San Martín 313 · Cochabamba</p>
-          <h1>Corte, color y barbería en el mismo sillón.</h1>
-          <p class="lead">Je suis Franz atiende peluquería y barbería, con color, peinado y maquillaje. Queda en San Martín 313, casi esquina Ecuador. El turno se pide por teléfono.</p>
+          <p class="eyebrow">San Martín 313 · Cochabamba</p>
+          <h1>Je suis<br><em>Franz.</em></h1>
+          <p class="lead">Corte, color, peinado, maquillaje y barbería. Casi esquina Ecuador. El turno se pide al 74378363.</p>
           <div class="actions">
-            <a class="btn btn-brass" href="tel:+59174378363">Llamar al 74378363</a>
-            <a class="btn btn-line" href="#horario">Ver si está abierto</a>
+            <a class="btn btn-brass" href="tel:+59174378363">Reservar por teléfono</a>
+            <a class="btn btn-line" href="#servicios">Ver el trabajo</a>
           </div>
-          <ul class="facts">
-            <li><strong>4,2 en Google</strong><span>303 reseñas</span></li>
-            <li><strong>Peluquería y barbería</strong><span>el mismo local</span></li>
-            <li><strong>También el domingo</strong><span>hasta las 16:00</span></li>
-          </ul>
         </div>
-        <aside class="board" aria-label="Horario de hoy">
-          <p class="board-kicker">Hoy</p>
-          <h2>El sillón.</h2>
+        <aside class="board" id="horario" aria-label="Horario de hoy">
+          <p class="board-kicker">Horario</p>
+          <h2>Hoy.</h2>
           <p class="board-status" data-status>Consultando el horario…</p>
           <ul class="hours">
-            <li data-days="1,2,3,4,5">
-              <span>Lunes a viernes</span>
-              <strong>9:00–19:30</strong>
-            </li>
-            <li data-day="6">
-              <span>Sábado</span>
-              <strong>8:30–19:30</strong>
-            </li>
-            <li data-day="0">
-              <span>Domingo</span>
-              <strong>9:30–16:00</strong>
-            </li>
+            <li data-days="1,2,3,4,5"><span>Lunes a viernes</span><strong>9:00–19:30</strong></li>
+            <li data-day="6"><span>Sábado</span><strong>8:30–19:30</strong></li>
+            <li data-day="0"><span>Domingo</span><strong>9:30–16:00</strong></li>
           </ul>
-          <p class="board-note">El sábado abre media hora antes. El domingo cierra a las 16:00.</p>
+          <p class="board-note">El sábado abre a las 8:30. El domingo cierra a las 16:00.</p>
         </aside>
       </div>
     </section>
@@ -128,63 +115,51 @@
     <section class="services" id="servicios">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow">Qué hacen</p>
-          <h2>Lo que el salón publica como su trabajo.</h2>
-          <p class="intro">Corte, color, peinados, maquillaje y barbería. El precio del color no está fijo: lo ven en el sillón, según el cabello.</p>
+          <p class="eyebrow">El trabajo</p>
+          <h2>Cuatro cosas, en el mismo sillón.</h2>
+          <p class="intro">Corte, color, barbería y maquillaje. El color se cotiza al ver el cabello. Esa primera revisión no tiene costo.</p>
         </div>
-        <div class="cards">
-          <article class="card">
-            <h3>Corte y peinado</h3>
-            <p>Desde un arreglo hasta un corte corto. Llama y pregunta el turno antes de llegar en hora pico.</p>
+        <div class="panels">
+          <article class="panel">
+            <img src="assets/corte.jpg" alt="Ondas de cabello rubio vistas de espalda, fotografía de ambiente">
+            <div class="panel-copy">
+              <h3>Corte y peinado</h3>
+              <p>Desde un arreglo hasta un corte corto. Llama antes si vienes en hora pico.</p>
+            </div>
           </article>
-          <article class="card" id="color">
-            <h3>Color</h3>
-            <p>La cotización se hace al ver el cabello: largo, cantidad y si hay decoloración. Esa primera revisión no tiene costo. En la decoloración usan protector Olaplex y trabajan con L'Oréal.</p>
+          <article class="panel" id="color">
+            <img src="assets/color.jpg" alt="Espejo dorado, peines y atomizadores sobre una mesa, fotografía de ambiente">
+            <div class="panel-copy">
+              <h3>Color</h3>
+              <p>La cotización depende del largo y de si hay decoloración. En esa decoloración usan protector Olaplex, y trabajan con L'Oréal.</p>
+            </div>
           </article>
-          <article class="card">
-            <h3>Barbería</h3>
-            <p>Corte de barbería en el mismo salón, junto al trabajo de peluquería.</p>
+          <article class="panel">
+            <img src="assets/barberia.jpg" alt="Sillón rojo de barbería frente a un lavabo, fotografía de ambiente">
+            <div class="panel-copy">
+              <h3>Barbería</h3>
+              <p>El corte de barbería se hace en el mismo salón, junto a la peluquería.</p>
+            </div>
           </article>
-          <article class="card">
-            <h3>Maquillaje</h3>
-            <p>Maquillaje de larga duración, pestañas, pedrería y brillo. Si es para un evento, avisa con tiempo al llamar.</p>
+          <article class="panel">
+            <img src="assets/maquillaje.jpg" alt="Maquillaje reflejado en espejos ovalados, fotografía de ambiente">
+            <div class="panel-copy">
+              <h3>Maquillaje</h3>
+              <p>Larga duración, pestañas, pedrería y brillo. Si es para un evento, avísalo al llamar.</p>
+            </div>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section class="hours-band" id="horario">
-      <div class="wrap hours-grid">
-        <div>
-          <p class="eyebrow light">Horario</p>
-          <h2>Abre todos los días.</h2>
-          <p class="intro light">El horario es el de la ficha de Google, en hora de Cochabamba. Entre semana cierra a las 19:30. El domingo, a las 16:00.</p>
-        </div>
-        <ol class="steps">
-          <li>
-            <strong>Lunes a viernes</strong>
-            <span>De 9:00 a 19:30.</span>
-          </li>
-          <li>
-            <strong>Sábado</strong>
-            <span>De 8:30 a 19:30.</span>
-          </li>
-          <li>
-            <strong>Domingo</strong>
-            <span>De 9:30 a 16:00.</span>
-          </li>
-        </ol>
       </div>
     </section>
 
     <section class="visit" id="donde">
       <div class="wrap visit-grid">
         <div>
-          <p class="eyebrow">Dónde estamos</p>
+          <p class="eyebrow">El local</p>
           <h2>San Martín 313, casi Ecuador.</h2>
-          <p class="intro">Calle San Martín número 313, casi esquina Ecuador, Cochabamba. En el mapa el código del lugar es JR6V+4X.</p>
+          <p class="intro">Calle San Martín número 313, Cochabamba. En el mapa el código del lugar es JR6V+4X. 4,2 en Google, sobre 303 reseñas.</p>
           <ul class="contact">
-            <li><a href="tel:+59174378363">Teléfono 74378363</a></li>
+            <li><a href="tel:+59174378363">74378363</a></li>
             <li><a href="https://www.google.com/maps/dir/?api=1&destination=-17.389638,-66.1550171">Cómo llegar</a></li>
           </ul>
         </div>
@@ -202,7 +177,7 @@
       <p>Lunes a viernes 9:00–19:30<br>Sábado 8:30–19:30 · Domingo 9:30–16:00</p>
       <p><a href="tel:+59174378363">74378363</a></p>
     </div>
-    <p class="legal wrap">© 2026 Salón Je Suis Franz</p>
+    <p class="legal wrap">Fotografías de ambiente con licencia libre de Pexels. No son fotos del local. © 2026 Salón Je Suis Franz</p>
   </footer>
   <a class="call-float" href="tel:+59174378363" aria-label="Llamar al 74378363">Llamar</a>
   <script src="script.js"></script>

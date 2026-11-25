@@ -107,7 +107,21 @@ const setupFloat = () => {
   window.addEventListener("scroll", sync, { passive: true });
 };
 
+const setupHeader = () => {
+  const top = document.querySelector(".top");
+  const toggle = document.querySelector(".nav-toggle");
+  if (!top) return;
+  const sync = () => {
+    const menuOpen = toggle?.getAttribute("aria-expanded") === "true";
+    top.classList.toggle("is-solid", menuOpen || window.scrollY > 20);
+  };
+  sync();
+  window.addEventListener("scroll", sync, { passive: true });
+  toggle?.addEventListener("click", () => requestAnimationFrame(sync));
+};
+
 renderStatus();
 setupMenu();
 setupFloat();
+setupHeader();
 setInterval(renderStatus, 60000);
